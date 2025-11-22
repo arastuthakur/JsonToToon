@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebApplication">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>JSON to TOON Converter - Free Online Tool | Convert JSON to Token-Oriented Object Notation</title>
+    <meta name="title" content="JSON to TOON Converter - Free Online Tool | Convert JSON to Token-Oriented Object Notation">
+    <meta name="description" content="Convert JSON files to TOON (Token-Oriented Object Notation) format instantly. Free online tool that reduces token usage by 30-60% for LLM prompts. Fast, secure, and easy to use.">
+    <meta name="keywords" content="JSON to TOON, TOON converter, JSON converter, Token-Oriented Object Notation, LLM optimization, JSON format converter, free JSON tool, online JSON converter, TOON format, data format conversion">
+    <meta name="author" content="Arastu Thakur">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#0ea5e9">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ request.url }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.url }}">
+    <meta property="og:title" content="JSON to TOON Converter - Free Online Tool">
+    <meta property="og:description" content="Convert JSON files to TOON format instantly. Reduces token usage by 30-60% for LLM prompts. Fast, secure, and free.">
+    <meta property="og:image" content="{{ request.url_root }}static/og-image.png">
+    <meta property="og:site_name" content="JSON to TOON Converter">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ request.url }}">
+    <meta name="twitter:title" content="JSON to TOON Converter - Free Online Tool">
+    <meta name="twitter:description" content="Convert JSON files to TOON format instantly. Reduces token usage by 30-60% for LLM prompts.">
+    <meta name="twitter:image" content="{{ request.url_root }}static/og-image.png">
+    <meta name="twitter:creator" content="@arastuthakur">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) for SEO and GEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "JSON to TOON Converter",
+        "description": "Free online tool to convert JSON files to TOON (Token-Oriented Object Notation) format. Optimized for LLM prompts with 30-60% token reduction.",
+        "url": "{{ request.url_root }}",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Person",
+            "name": "Arastu Thakur",
+            "url": "https://github.com/arastuthakur",
+            "sameAs": [
+                "https://www.linkedin.com/in/arastuthakur/",
+                "https://github.com/arastuthakur"
+            ]
+        },
+        "featureList": [
+            "Convert JSON to TOON format",
+            "30-60% token reduction",
+            "Drag and drop file upload",
+            "Instant conversion",
+            "Free to use",
+            "Secure file handling",
+            "API support"
+        ],
+        "softwareHelp": {
+            "@type": "CreativeWork",
+            "text": "Upload a JSON file and get instant TOON format conversion. TOON is optimized for Large Language Model prompts."
+        },
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "softwareVersion": "1.0"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "JSON to TOON Converter",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "1"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Convert JSON to TOON Format",
+        "description": "Step-by-step guide to convert JSON files to TOON format using our free online tool",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Upload JSON File",
+                "text": "Click the upload area or drag and drop your JSON file into the converter",
+                "position": 1
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Convert to TOON",
+                "text": "Click the 'Convert to TOON' button to start the conversion process",
+                "position": 2
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Download Result",
+                "text": "Your TOON file will be automatically downloaded after conversion",
+                "position": 3
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="header" role="banner">
+            <div class="logo" aria-label="JSON to TOON Converter Logo">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1 class="title">JSON to TOON Converter</h1>
+            <p class="subtitle">Convert your JSON files to Token-Oriented Object Notation format instantly. Free online tool optimized for LLM prompts with 30-60% token reduction.</p>
+        </header>
+
+        <main class="main-content">
+            <div class="upload-card">
+                <form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data" id="uploadForm">
+                    <div class="upload-area" id="uploadArea" role="button" aria-label="Upload JSON file area" tabindex="0">
+                        <svg class="upload-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 10L12 5L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 5V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h2>Drop your JSON file here</h2>
+                        <p>or click to browse and select a JSON file for conversion</p>
+                        <input type="file" name="file" id="fileInput" accept=".json" required aria-label="Select JSON file to upload">
+                    </div>
+                    <div class="file-info" id="fileInfo" style="display: none;" role="status" aria-live="polite">
+                        <div class="file-details">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span id="fileName" aria-label="Selected file name"></span>
+                            <button type="button" class="remove-file" id="removeFile" aria-label="Remove selected file">×</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="convert-btn" id="convertBtn" disabled aria-label="Convert JSON file to TOON format">
+                        <span class="btn-text">Convert to TOON</span>
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        <div class="messages">
+                            {% for category, message in messages %}
+                                <div class="message message-{{ category }}">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        {% if category == 'error' %}
+                                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M12 8V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M12 16H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        {% else %}
+                                            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.7088 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        {% endif %}
+                                    </svg>
+                                    <span>{{ message }}</span>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+            </div>
+
+            <section class="info-section" aria-labelledby="toon-info-heading">
+                <h2 id="toon-info-heading">About TOON Format</h2>
+                <p class="info-intro">TOON (Token-Oriented Object Notation) is a compact, human-readable encoding of the JSON data model, specifically optimized for Large Language Model (LLM) prompts. It combines YAML-style indentation for nested objects with CSV-style tabular layout for uniform arrays, resulting in significant token savings. This format is ideal for developers working with AI models, reducing API costs and improving prompt efficiency by 30-60% compared to standard JSON.</p>
+                <div class="info-grid" role="list">
+                    <article class="info-card" role="listitem">
+                        <h3>Compact</h3>
+                        <p>30-60% fewer tokens compared to standard JSON format, making it ideal for LLM applications where token usage directly impacts cost and performance.</p>
+                    </article>
+                    <article class="info-card" role="listitem">
+                        <h3>Readable</h3>
+                        <p>Human-readable format with YAML-style indentation that maintains clarity while reducing file size. Easy to read and understand.</p>
+                    </article>
+                    <article class="info-card" role="listitem">
+                        <h3>Efficient</h3>
+                        <p>Optimized specifically for Large Language Model (LLM) prompts, reducing token consumption without losing data integrity or structure.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="footer-content">
+                <div>
+                    <p>Developed by <strong>Arastu Thakur</strong></p>
+                    <p class="footer-subtitle">JSON to TOON Converter - Fast, Simple, Reliable</p>
+                    <p class="footer-meta">Free online tool for converting JSON files to TOON format. Optimized for LLM applications.</p>
+                </div>
+                <nav class="social-links" aria-label="Social media links">
+                    <a href="https://www.linkedin.com/in/arastuthakur/" target="_blank" rel="noopener noreferrer me" class="social-link linkedin" aria-label="Visit Arastu Thakur's LinkedIn Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/arastuthakur" target="_blank" rel="noopener noreferrer me" class="social-link github" aria-label="Visit Arastu Thakur's GitHub Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const fileInfo = document.getElementById('fileInfo');
+        const fileName = document.getElementById('fileName');
+        const removeFile = document.getElementById('removeFile');
+        const convertBtn = document.getElementById('convertBtn');
+        const uploadForm = document.getElementById('uploadForm');
+
+        // Handle drag and drop
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].name.endsWith('.json')) {
+                fileInput.files = files;
+                handleFileSelect();
+            }
+        });
+
+        // Handle file input change
+        fileInput.addEventListener('change', handleFileSelect);
+
+        function handleFileSelect() {
+            const file = fileInput.files[0];
+            if (file) {
+                fileName.textContent = file.name;
+                fileInfo.style.display = 'block';
+                convertBtn.disabled = false;
+                uploadArea.style.display = 'none';
+            }
+        }
+
+        // Remove file
+        removeFile.addEventListener('click', () => {
+            fileInput.value = '';
+            fileInfo.style.display = 'none';
+            convertBtn.disabled = true;
+            uploadArea.style.display = 'flex';
+        });
+
+        // Handle form submission
+        uploadForm.addEventListener('submit', (e) => {
+            if (!fileInput.files[0]) {
+                e.preventDefault();
+                return;
+            }
+            convertBtn.disabled = true;
+            convertBtn.innerHTML = '<span class="btn-text">Converting...</span>';
+        });
+    </script>
+</body>
+</html>
+
