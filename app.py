@@ -11,6 +11,7 @@ import re
 from werkzeug.utils import secure_filename
 from werkzeug.exceptions import RequestEntityTooLarge
 from dotenv import load_dotenv
+import guincorn
 
 # Load environment variables from .env file
 load_dotenv()
@@ -478,7 +479,4 @@ def too_large(e):
     flash('File is too large. Maximum size is 16MB.', 'error')
     return redirect(url_for('index'))
 
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
 
